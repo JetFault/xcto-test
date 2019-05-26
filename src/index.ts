@@ -32,7 +32,7 @@ html: ${isHtml}\\n\
 ");`;
 
 	if (isHtml) {
-		script = `<html><head></head><body>${script}</body></html>`;
+		script = `<html><head></head><body><script>${script}</script></body></html>`;
 	}
 
 	res.send(script);
